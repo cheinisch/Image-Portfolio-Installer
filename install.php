@@ -6,3 +6,12 @@
     // Danach löscht sich der installer selbst
 
 ?>
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>ImagePortfolio Installer</title>
+    </head>
+    <body>
+    </body>
+</html>
