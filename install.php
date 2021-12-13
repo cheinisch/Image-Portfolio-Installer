@@ -75,22 +75,19 @@
     </style>
 
     </head>
-    <body class="bg-light">
+    <body class="bg-light d-flex flex-column h-100">
     
 <div class="container">
+  <form>
   <main>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Oneclick Installer</h2>
       <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
     </div>
-
-      <div class="col-md-7 col-lg-8">
+      <div class="row">
+      <div class="col-lg-5 col-md-5">
         <h4 class="mb-3">User Data</h4>
-        <form class="needs-validation" novalidate>
-          <div class="row g-3">
-
-
             <div class="col-12">
               <label for="username" class="form-label">Username</label>
               <div class="input-group has-validation">
@@ -118,12 +115,12 @@
               </div>
             </div>
 
-            
-
-          <hr class="my-4">
+      </div>
+      <div class="col-lg-7 col-md-7">
 
           <h4 class="mb-3">Server Data</h4>
-          <div class="col-sm-6">
+          <div class="row">
+          <div class="col-sm-6 col-md-6">
               <label for="firstName" class="form-label">Site Title</label>
               <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
               <div class="invalid-feedback">
@@ -131,13 +128,15 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-md-6">
               <label for="lastName" class="form-label">Site Tagline</label>
               <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Valid last name is required.
               </div>
             </div>
+    </div>
+    <div class="row">
             <div class="col-md-6">
               <label for="cc-name" class="form-label">Database Host</label>
               <input type="text" class="form-control" id="cc-name" placeholder="localhost" required>
@@ -154,22 +153,23 @@
                 Name on card is required
               </div>
             </div>
-
-            <div class="col-md-5">
+    </div>
+    <div class="row">
+            <div class="col-md-6">
               <label for="cc-number" class="form-label">Database User</label>
               <input type="text" class="form-control" id="cc-number" placeholder="" required>
               <div class="invalid-feedback">
                 Credit card number is required
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
               <label for="cc-number" class="form-label">Database Password</label>
               <input type="text" class="form-control" id="cc-number" placeholder="" required>
               <div class="invalid-feedback">
                 Credit card number is required
               </div>
             </div>
-
+    </div>
             <div class="col-md-2">
               <label for="cc-cvv" class="form-label">Table Prefix</label>
               <input type="text" class="form-control" id="cc-cvv" placeholder="ip_" required>
@@ -177,15 +177,14 @@
                 Security code required
               </div>
             </div>
-
-          <hr class="my-4">
-
+    </div>
+    </div>
+        <hr>
           <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to install</button>
-        </form>
       </div>
     </div>
   </main>
-
+    </form>
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2017–2021 Company Name</p>
     <ul class="list-inline">
