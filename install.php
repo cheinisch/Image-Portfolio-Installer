@@ -75,7 +75,7 @@
     </style>
 
     </head>
-    <body class="bg-light d-flex flex-column h-100">
+    <body class="bg-dark text-light d-flex flex-column h-100">
     
 <div class="container">
   <form>
