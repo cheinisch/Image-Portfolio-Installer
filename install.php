@@ -5,9 +5,12 @@
     // Es muss nur noch der Adminuser, DB Login, und Sitename angegeben werden
     // Danach löscht sich der installer selbst
 
-
-
-    //sdownloadUnzipGetContents("https://app.image-portfolio.org/downloads/latest.zip");
+    if(isset($_GET['install']))
+    {
+      downloadUnzipGetContents("https://app.image-portfolio.org/downloads/latest.zip");
+    }else{
+      loadhtml();
+    }
 
     function downloadUnzipGetContents($url) {
         
@@ -43,6 +46,9 @@
         $zip->extractTo($extractPath);
         $zip->close();
     }
+
+    function loadhtml()
+    {
 
 ?>
 
@@ -196,3 +202,8 @@
       <script src="form-validation.js"></script>
     </body>
 </html>
+
+<?php
+    }
+
+?>
