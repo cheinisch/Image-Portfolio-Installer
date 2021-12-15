@@ -159,9 +159,10 @@
       $mysqli->multi_query($sql);
       $mysqli->close();
       $tablename = $prefix."config";
-
-      $sql_data = "INSERT INTO `$tablename` (`id`, `admin_user`, `admin_passwd`, `admin_mail`, `site-title`, `site-name`, `site-tagline`, `theme`) VALUES (NULL, '$username', '$userpassword', '$usermail', '$sitetitle', '$sitetitle', '$sitetagline', 'basis');";
-      echo $sql_data;
+      $theme = "basic";
+      sleep(5);
+      $sql_data = "INSERT INTO `$tablename` (`id`, `admin_user`, `admin_passwd`, `admin_mail`, `site-title`, `site-name`, `site-tagline`, `theme`) VALUES (NULL, '$username', '$userpassword', '$usermail', '$sitetitle', '$sitetitle', '$sitetagline', '$theme');";
+      //echo $sql_data;
       $mysqli_data = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
       $mysqli_data->query($sql_data);
       echo $mysqli_data->error;
